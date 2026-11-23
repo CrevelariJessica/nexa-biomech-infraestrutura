@@ -103,9 +103,9 @@ Foram realizados três testes simulados alterando diretamente a temperatura no s
 
 | Caso de Teste | Entrada (TMP36) | Resultado Esperado | Resultado Obtido (Circuito e Serial) | Status | Evidência |
 | :--- | :---: | :--- | :--- | :---: | :--- |
-| **Teste 1 — Normal** | 24 °C | Somente o LED verde aceso; leitura abaixo de 28 °C no Monitor Serial. | LED verde aceso; Monitor Serial exibiu `24.78 C` e `Status: NORMAL (VERDE)`. | **Aprovado** | `teste-normal.png` |
-| **Teste 2 — Atenção** | 29 °C | Somente o LED amarelo aceso; leitura entre 28 °C e 31,9 °C no Monitor Serial. | LED amarelo aceso; Monitor Serial exibiu `29.18 C` e `Status: ATENCAO (AMARELO)`. | **Aprovado** | `teste-atencao.png` |
-| **Teste 3 — Crítico** | 35 °C | Somente o LED vermelho aceso; leitura a partir de 32 °C no Monitor Serial. | LED vermelho aceso; Monitor Serial exibiu `36.02 C` e `Status: CRITICO (VERMELHO)`. | **Aprovado** | `teste-critico.png` |
+| **Teste 1 — Normal** | 25 °C | Somente o LED verde aceso; leitura abaixo de 28 °C no Monitor Serial. | LED verde aceso; Monitor Serial exibiu `24.78 C` e `Status: NORMAL (VERDE)`. | **Aprovado** | `teste-normal.png` |
+| **Teste 2 — Atenção** | 30 °C | Somente o LED amarelo aceso; leitura entre 28 °C e 31,9 °C no Monitor Serial. | LED amarelo aceso; Monitor Serial exibiu `31.13 C` e `Status: ATENCAO (AMARELO)`. | **Aprovado** | `teste-atencao.png` |
+| **Teste 3 — Crítico** | 38 °C | Somente o LED vermelho aceso; leitura a partir de 32 °C no Monitor Serial. | LED vermelho aceso; Monitor Serial exibiu `37.98 C` e `Status: CRITICO (VERMELHO)`. | **Aprovado** | `teste-critico.png` |
 
 ---
 

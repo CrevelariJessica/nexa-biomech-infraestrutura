@@ -27,5 +27,5 @@ Excel, Word, Draw.io, Cisco Packet Tracer, Tinkercad e GitHub.
 
 ## Controle e Privacidade
 
-- **Última atualização:** 16/11/2026
-- **Privacidade:** Este repositório público cumpre rigorosamente os requisitos de avaliação técnica e não contém nomes de integrantes, RAs, e-mails ou arquivos finais identificados (Word/PDF).
+- **Última atualização:** 22/11/2026[cite: 1, 4]
+- **Privacidade:** Este repositório público cumpre rigorosamente os requisitos de avaliação técnica e não contém nomes de integrantes, RAs, e-mails ou arquivos finais identificados.
