@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" agent="Claude">
+  <diagram id="servicos" name="Serviços">
+    <mxGraphModel dx="1608" dy="909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;" value="&lt;b&gt;Nexa Biomech — Serviços de TI (nexabiomech.local)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="420" x="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=12;" value="&lt;b&gt;Todos os Funcionários&lt;/b&gt;&lt;br&gt;60 usuários · 4 andares" vertex="1">
+          <mxGeometry height="70" width="240" x="20" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=12;" value="&lt;b&gt;Eng. Eletrônica e Dev. de Software&lt;/b&gt;&lt;br&gt;16 usuários" vertex="1">
+          <mxGeometry height="70" width="240" x="20" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=12;" value="&lt;b&gt;Equipe de TI&lt;/b&gt;&lt;br&gt;6 usuários" vertex="1">
+          <mxGeometry height="70" width="240" x="20" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=12;" value="&lt;b&gt;Impressoras Brother&lt;/b&gt;&lt;br&gt;6 unidades · 4 andares" vertex="1">
+          <mxGeometry height="70" width="240" x="20" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="switch" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=13;" value="&lt;b&gt;Rede LAN — switches e APs (VLANs)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="680" x="430" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c1" edge="1" parent="1" source="c1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;startArrow=block;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="switch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c2" edge="1" parent="1" source="c2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;startArrow=block;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="switch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c3" edge="1" parent="1" source="c3" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;startArrow=block;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="switch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c4" edge="1" parent="1" source="c4" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;startArrow=block;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="switch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="host" parent="1" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;container=1;collapsible=0;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="440" width="680" x="430" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="hosttitle" parent="host" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;" value="&lt;b style=&quot;font-size:14px&quot;&gt;SRV-NEXA-01&lt;/b&gt;&lt;br&gt;Servidor físico&lt;br&gt;Windows Server 2022 Hyper-V" vertex="1">
+          <mxGeometry height="62" width="180" x="140" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="vmdc" parent="host" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=6;fontSize=11;fillColor=#dae8fc;strokeColor=#0078d4;strokeWidth=2;" value="&lt;b style=&quot;font-size:13px&quot;&gt;VM-DC-01&lt;/b&gt;&lt;br&gt;Windows Server 2022 Std&lt;br&gt;&lt;i&gt;2 vCPU / 8 GB RAM / 120 GB (RAID 1)&lt;/i&gt;&lt;hr size=&quot;1&quot;&gt;&lt;b&gt;Serviços:&lt;/b&gt;&lt;br&gt;• AD DS: autenticação centralizada, GPO e controle de acesso (60 funcionários)&lt;br&gt;• DNS e DHCP: nexabiomech.local e IPs por VLAN&lt;br&gt;• Print Server: filas e cotas das 6 impressoras Brother (4 andares)&lt;br&gt;&lt;i&gt;(DNS/DHCP e Print compartilham os recursos da VM)&lt;/i&gt;" vertex="1">
+          <mxGeometry height="300" width="200" x="20" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="vmdev" parent="host" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=6;fontSize=11;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;" value="&lt;b style=&quot;font-size:13px&quot;&gt;VM-DEV-MON&lt;/b&gt;&lt;br&gt;Ubuntu Server 24.04 LTS&lt;br&gt;&lt;i&gt;4 vCPU / 12 GB RAM / 80 GB SO + 1 TB Dados (RAID 10)&lt;/i&gt;&lt;hr size=&quot;1&quot;&gt;&lt;b&gt;Serviços:&lt;/b&gt;&lt;br&gt;• Repositório Git: código-fonte e firmwares das próteses (16 usuários de Eng. Eletrônica e Dev. de Software)&lt;br&gt;• Monitoramento SNMP/ICMP 24/7: servidor, switches, APs e alertas ambientais da sala de TI (6 usuários de TI)&lt;br&gt;&lt;i&gt;(Monitoramento compartilha os recursos da VM)&lt;/i&gt;" vertex="1">
+          <mxGeometry height="300" width="200" x="240" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="vmfs" parent="host" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=6;fontSize=11;fillColor=#dae8fc;strokeColor=#0078d4;strokeWidth=2;" value="&lt;b style=&quot;font-size:13px&quot;&gt;VM-FS-01&lt;/b&gt;&lt;br&gt;Windows Server 2022 Std&lt;br&gt;&lt;i&gt;4 vCPU / 16 GB RAM / 80 GB SO + 7 TB Dados (RAID 10)&lt;/i&gt;&lt;hr size=&quot;1&quot;&gt;&lt;b&gt;Serviços:&lt;/b&gt;&lt;br&gt;• File Server (SMB): modelos CAD 3D, esquemas eletrônicos, relatórios de testes e documentos administrativos&lt;br&gt;• Backup Server: backups automatizados (Veeam Community/Essentials) para storage externo e nuvem&lt;br&gt;&lt;i&gt;(Backup compartilha os recursos da VM)&lt;/i&gt;" vertex="1">
+          <mxGeometry height="300" width="200" x="460" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="e-sw-dc" edge="1" parent="1" source="switch" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;startArrow=block;endArrow=block;exitX=0.1765;exitY=1;entryX=0.5;entryY=0;fontSize=10;labelBackgroundColor=#ffffff;" target="vmdc" value="AD/LDAP, GPO&lt;br&gt;DNS · DHCP&lt;br&gt;Impressão">
+          <mxGeometry relative="1" x="-0.45" as="geometry" />
+        </mxCell>
+        <mxCell id="e-sw-dev" edge="1" parent="1" source="switch" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;startArrow=block;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=10;labelBackgroundColor=#ffffff;" target="vmdev" value="Git (SSH/HTTPS)&lt;br&gt;SNMP / ICMP">
+          <mxGeometry relative="1" x="-0.45" as="geometry" />
+        </mxCell>
+        <mxCell id="e-sw-fs" edge="1" parent="1" source="switch" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;startArrow=block;endArrow=block;exitX=0.8235;exitY=1;entryX=0.5;entryY=0;fontSize=10;labelBackgroundColor=#ffffff;" target="vmfs" value="SMB&lt;br&gt;(arquivos)">
+          <mxGeometry relative="1" x="-0.45" as="geometry" />
+        </mxCell>
+        <mxCell id="raid1" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=12;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=11;" value="&lt;b&gt;Armazenamento RAID 1&lt;/b&gt;&lt;br&gt;Disco do AD: 120 GB (VM-DC-01)" vertex="1">
+          <mxGeometry height="90" width="200" x="450" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="raid10" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=12;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=11;" value="&lt;b&gt;Armazenamento RAID 10&lt;/b&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp;Hospeda tanto os discos de SO das duas VMs quanto os volumes de dados.&lt;/span&gt;&lt;span class=&quot;&quot;&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;Dados: 7 TB (VM-FS-01) + 1 TB (VM-DEV-MON)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="420" x="670" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="e-dc-raid" edge="1" parent="1" source="vmdc" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;startArrow=block;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=10;labelBackgroundColor=#ffffff;" target="raid1" value="120 GB">
+          <mxGeometry relative="1" x="0.4" as="geometry" />
+        </mxCell>
+        <mxCell id="e-dev-raid" edge="1" parent="1" source="vmdev" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;startArrow=block;endArrow=block;exitX=0.5;exitY=1;entryX=0.238;entryY=0;fontSize=10;labelBackgroundColor=#ffffff;" target="raid10" value="80 GB + 1 TB">
+          <mxGeometry relative="1" x="0.4" as="geometry" />
+        </mxCell>
+        <mxCell id="e-fs-raid" edge="1" parent="1" source="vmfs" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;startArrow=block;endArrow=block;exitX=0.5;exitY=1;entryX=0.762;entryY=0;fontSize=10;labelBackgroundColor=#ffffff;" target="raid10" value="80 GB + 7 TB">
+          <mxGeometry relative="1" x="0.4" as="geometry" />
+        </mxCell>
+        <mxCell id="bkp-ext" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=12;" value="&lt;b&gt;Storage externo&lt;/b&gt;&lt;br&gt;(cópia de backup)" vertex="1">
+          <mxGeometry height="90" width="240" x="1200" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="bkp-cloud" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=12;" value="&lt;b&gt;Nuvem&lt;/b&gt;&lt;br&gt;(cópia de backup)" vertex="1">
+          <mxGeometry height="100" width="240" x="1200" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="e-fs-ext" edge="1" parent="1" source="vmfs" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;endArrow=block;exitX=1;exitY=0.3;entryX=0;entryY=0.5;fontSize=10;labelBackgroundColor=#ffffff;" target="bkp-ext" value="Veeam">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-fs-cloud" edge="1" parent="1" source="vmfs" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;endArrow=block;exitX=1;exitY=0.7;entryX=0;entryY=0.5;fontSize=10;labelBackgroundColor=#ffffff;" target="bkp-cloud" value="Veeam">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
