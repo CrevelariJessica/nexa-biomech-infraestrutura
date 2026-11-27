@@ -1,10 +1,10 @@
 <mxfile host="app.diagrams.net" agent="Claude">
   <diagram id="servicos" name="Serviços">
-    <mxGraphModel dx="1608" dy="909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1649" dy="1095" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="850" background="light-dark(#FFFFFF,#C8C8C8)" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;" value="&lt;b&gt;Nexa Biomech — Serviços de TI (nexabiomech.local)&lt;/b&gt;" vertex="1">
+        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontColor=light-dark(#000000,#000000);" value="&lt;b&gt;Nexa Biomech — Serviços de TI (nexabiomech.local)&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="420" x="20" as="geometry" />
         </mxCell>
         <mxCell id="c1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=12;" value="&lt;b&gt;Todos os Funcionários&lt;/b&gt;&lt;br&gt;60 usuários · 4 andares" vertex="1">
